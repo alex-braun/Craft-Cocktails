@@ -5,11 +5,11 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        {{#link-to 'index' class="navbar-brand"}}Library App{{/link-to}}
-        {{#link-to 'libraries' tagName="li"}}<a href="">Libraries</a>{{/link-to}}
+        {{!-- {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}} --}}
+        {{!-- {{#link-to 'libraries' tagName="li"}}<a href="">Libraries</a>{{/link-to}} --}}
           <li>{{#link-to "users"}}Users{{/link-to}}</li>
           <li>{{#link-to 'about'}}About{{/link-to}}</li>
-          <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+          {{!-- <li>{{#link-to 'contact'}}Contact{{/link-to}}</li> --}}
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -24,7 +24,7 @@
                 Admin<span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                {{#link-to 'admin.invitations' tagName="li"}}<a href="">Invitations</a>{{/link-to}}
+                {{!-- {{#link-to 'admin.invitations' tagName="li"}}<a href="">Invitations</a>{{/link-to}} --}}
               </ul>
             </li>
 
