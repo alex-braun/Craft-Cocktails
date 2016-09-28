@@ -6,7 +6,7 @@ export default DS.Model.extend({
   category: DS.attr('string'),
   instructions: DS.attr(),
   ingredients: DS.attr(),
-  image-url: DS.attr('string'),
+  imageurl: DS.attr('string'),
   user:DS.attr('user'),
 
   isValid: Ember.computed.notEmpty('name')
