@@ -25,8 +25,8 @@
   {{#each filteredList as |cocktail|}}
     <div class="col-md-4">
       {{#cocktail-item item=cocktail badge=cocktail.books.length}}
-        {{#link-to 'libraries.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
-        <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' cocktail}}>Delete</button>
+        {{#link-to 'cocktails.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
+        <button class="btn btn-danger btn-xs" {{action 'deleteCocktail' cocktail}}>Delete</button>
       {{/cocktail-item}}
     </div>
   {{else}}
