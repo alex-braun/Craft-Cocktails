@@ -8,7 +8,7 @@
         {{!-- {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}} --}}
         {{#link-to 'cocktails' tagName="li"}}<a href="">Cocktails</a>{{/link-to}}
           <li>{{#link-to "users"}}Users{{/link-to}}</li>
-          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+          {{!-- <li>{{#link-to 'about'}}About{{/link-to}}</li> --}}
           {{!-- <li>{{#link-to 'contact'}}Contact{{/link-to}}</li> --}}
         {{/if}}
       </ul>
@@ -40,6 +40,7 @@
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="col-md-8 col-md-offset-2">
+{{!-- <div class="main"> --}}
+<div class="col-md-8 col-md-offset-1 main">
   {{outlet}}
 </div>

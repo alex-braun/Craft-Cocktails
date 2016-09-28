@@ -1,2 +1,37 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+body {
+  background-image: url(http://dreamsinheels.com/wp-content/uploads/2014/09/cocktails-.jpg);
+  background-image: url(../assets/images/cocktail_i_by_creatunco.jpg);
+}
+
+// .main {
+//     margin: 0 30px 0 30px;
+// }
+
+// .text-center {
+//   margin: 0 auto;
+// }
+
+.title {
+  height: 175px;
+  background-image: url(../assets/assets/images/cocktail_i_by_creatunco.jpg);
+}
+
+.title  h1 {
+  font-size: 50px;
+  color: #F4FCDE;
+}
+
+.well {
+  width: 150px;
+}
+
+.search-cocktail {
+  width: 350px;
+}
+
+// .cocktail-item {
+//   max-width: 200px;
+// }

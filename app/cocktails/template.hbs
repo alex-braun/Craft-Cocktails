@@ -1,10 +1,14 @@
-<h1>Cocktails</h1>
-
+<div class="">
+  <div class="title">
+    <h1>Craft Cocktails</h1>
+  </div>
+</div>
 <div class="well">
   <ul class="nav nav-pills">
-    {{#link-to 'cocktails.index' tagName="li"}}<a href="">List all</a>{{/link-to}}
+    {{#link-to 'cocktails.index' tagName="li"}}<a href="">All Cocktails</a>{{/link-to}}
     {{#link-to 'cocktails.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
   </ul>
 </div>
+
 
 {{outlet}}
