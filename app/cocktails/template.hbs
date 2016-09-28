@@ -1,1 +1,10 @@
+<h1>Cocktails</h1>
+
+<div class="well">
+  <ul class="nav nav-pills">
+    {{#link-to 'cocktails.index' tagName="li"}}<a href="">List all</a>{{/link-to}}
+    {{#link-to 'cocktails.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
+  </ul>
+</div>
+
 {{outlet}}

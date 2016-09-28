@@ -1,0 +1,15 @@
+<h2>Add a new Cocktail</h2>
+
+<div class="row">
+
+  <div class="col-md-6">
+    {{cocktail-item-form item=model buttonLabel='Add to cocktail list' action='saveCocktail'}}
+  </div>
+
+  <div class="col-md-4">
+    {{#cocktail-item item=model}}
+      <br/>
+    {{/cocktail-item}}
+  </div>
+
+</div>
