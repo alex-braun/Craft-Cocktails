@@ -18,7 +18,6 @@ export default Ember.Route.extend({
   },
 
   model(params) {
-
     if (params.limit === 'all') {
       return this.store.findAll('cocktail');
     }
@@ -34,6 +33,7 @@ export default Ember.Route.extend({
   actions: {
 
     deleteCocktail(cocktail) {
+
       let confirmation = confirm('Are you sure?');
 
       if (confirmation) {

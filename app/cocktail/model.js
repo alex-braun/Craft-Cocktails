@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 import Ember from 'ember';
+// import {belongsTo} from 'ember-data/relationships';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
@@ -7,7 +8,7 @@ export default DS.Model.extend({
   directions: DS.attr(),
   ingredients: DS.attr(),
   imageurl: DS.attr('string'),
-  // user:DS.attr('user'),
+  user_id: DS.attr('number'),
 
   isValid: Ember.computed.notEmpty('name')
 });
