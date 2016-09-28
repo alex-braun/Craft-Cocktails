@@ -11,7 +11,10 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('about');
-  this.route('cocktails');
+  this.route('cocktails', function() {
+   this.route('new');
+   this.route('edit', { path: '/:cocktail_id/edit' });
+ });
 });
 
 export default Router;
