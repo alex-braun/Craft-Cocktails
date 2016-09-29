@@ -26,21 +26,21 @@
 {{!-- <div class="col-md-8 col-md-offset-1 row"> --}}
 <div class="row">
   {{#each filteredList as |cocktail|}}
-    <div class="col-md-4">
+    <div class="col-md-4 each-recipe">
       {{#cocktail-item item=cocktail}}
         {{#link-to 'cocktails.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
         <button class="btn btn-danger btn-xs" {{action 'deleteCocktail' cocktail}}>Delete</button>
       {{/cocktail-item}}
     </div>
-  {{!-- {{else}} --}}
-    {{!-- {{#if model.isUpdating}}
+  {{else}}
+    {{#if model.isUpdating}}
       {{spinner-cube}}
     {{else}}
       <div class="col-md-12 text-center">
         <div class="alert alert-info">
-          Sorry, no result.
+          Sorry, no cocktails match that search.
         </div>
       </div>
-    {{/if}} --}}
+    {{/if}}
   {{/each}}
 </div>

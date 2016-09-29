@@ -9,6 +9,7 @@ export default DS.Model.extend({
   ingredients: DS.attr(),
   imageurl: DS.attr('string'),
   user_id: DS.attr('number'),
+  user: DS.attr(),
 
   isValid: Ember.computed.notEmpty('name')
 });
