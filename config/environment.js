@@ -6,7 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    // apiHost: 'http://localhost:3000', //deployment step
+    apiHost: 'http://localhost:3000/', //deployment step
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -45,7 +45,7 @@ module.exports = function(environment) {
     //deployment step
     ENV.baseURL = '/';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'http://localhost:3000';
+    ENV.apiHost = 'https://peaceful-cove-48013.herokuapp.com/';
   }
 
   return ENV;
