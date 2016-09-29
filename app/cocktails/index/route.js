@@ -11,13 +11,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-
   queryParams: {
     limit: { refreshModel: true },
     letter: { refreshModel: true }
   },
 
   model(params) {
+
     if (params.limit === 'all') {
       return this.store.findAll('cocktail');
     }
@@ -41,5 +41,4 @@ export default Ember.Route.extend({
       }
     }
   }
-
 });

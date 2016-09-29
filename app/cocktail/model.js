@@ -10,6 +10,7 @@ export default DS.Model.extend({
   imageurl: DS.attr('string'),
   user_id: DS.attr('number'),
   user: DS.attr(),
+  editable: DS.attr('boolean'),
 
-  isValid: Ember.computed.notEmpty('name')
+  isValid: Ember.computed.notEmpty('name'),
 });
