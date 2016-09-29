@@ -2,8 +2,10 @@
 @import 'bootstrap/theme';
 
 body {
-  background-image: url(http://dreamsinheels.com/wp-content/uploads/2014/09/cocktails-.jpg);
-  background-image: url(../assets/images/cocktail_i_by_creatunco.jpg);
+  background-image: url(../assets/images/cocktail_bar.jpg), url(../assets/images/cocktail_i_by_creatunco.jpg), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
 // .main {
@@ -16,7 +18,9 @@ body {
 
 .title {
   height: 175px;
-  background-image: url(../assets/assets/images/cocktail_i_by_creatunco.jpg);
+  background: url(../assets/assets/images/cocktail_i_by_creatunco.jpg);
+
+
 }
 
 .title  h1 {
@@ -32,6 +36,10 @@ body {
   width: 350px;
 }
 
-// .cocktail-item {
-//   max-width: 200px;
-// }
+.each-recipe {
+  min-height: 500px;
+  max-height: 500px;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  overflow: auto;
+}
