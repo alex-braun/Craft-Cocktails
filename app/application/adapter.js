@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import ActiveModelAdapter from 'active-model-adapter';
-import ENV from 'ga-wdi-boston.ember-auth/config/environment'; //deployment step
+import ENV from 'Craft-Cocktails/config/environment'; //deployment step
 
 export default ActiveModelAdapter.extend({
   host: ENV.apiHost, //deployment step
