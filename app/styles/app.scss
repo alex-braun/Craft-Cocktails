@@ -2,12 +2,23 @@
 @import 'bootstrap/theme';
 
 body {
-  background-image: url(../assets/images/cocktail_bar.jpg), url(../assets/images/cocktail_i_by_creatunco.jpg), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background:
+    url(../assets/images/cocktail_bar.jpg) 100%;
+    // url(../assets/images/cocktail_i_by_creatunco.jpg) no-repeat;
+
+
+
+    background-size: 100%,
+
+    // 800px 900px no-repeat,
+    // linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  // background-repeat: no-repeat;
 
 }
 
+.navbar-default {
+  background: black;
+}
 // .main {
 //     margin: 0 30px 0 30px;
 // }
@@ -18,7 +29,7 @@ body {
 
 .title {
   height: 175px;
-  background: url(../assets/assets/images/cocktail_i_by_creatunco.jpg);
+
 
 
 }
@@ -46,4 +57,20 @@ h2 {
   word-wrap: break-word;
   margin-bottom: 10px;
   overflow: auto;
+}
+
+.all-button {
+  width: 100px;
+}
+
+.list-users {
+  color: #F4FCDE;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.control-label {
+  color: #F4FCDE;
 }
