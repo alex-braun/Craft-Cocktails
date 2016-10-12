@@ -5,6 +5,7 @@ export default Ember.Service.extend({
   ajax: Ember.inject.service(),
   credentials: storageFor('auth'),
   isAuthenticated: Ember.computed.bool('credentials.token'),
+  isAdmin: Ember.computed.bool('credentials.admin'),
 //storageFor comes from Ember local storage.  Uses computer local memory to
 //store local memory.
 //isAuthenticated checks to see that a user is authenticated.
@@ -33,6 +34,8 @@ export default Ember.Service.extend({
       this.get('credentials').set('id', result.user.id);
       this.get('credentials').set('email', result.user.email);
       this.get('credentials').set('token', result.user.token);
+      this.get('credentials').set('admin', result.user.admin);
+      console.log(result);
     });
   },
 

@@ -29,11 +29,13 @@
     <div class="col-md-4 each-recipe">
 
       {{#cocktail-item item=cocktail}}
-      {{#if cocktail.editable}}
-      <p>{{cocktail.editable}}</p>
+      {{#if isAdmin}}
         {{#link-to 'cocktails.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
         <button class="btn btn-danger btn-xs" {{action 'deleteCocktail' cocktail}}>Delete</button>
-        {{/if}}
+      {{else if cocktail.editable}}
+        {{#link-to 'cocktails.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
+        <button class="btn btn-danger btn-xs" {{action 'deleteCocktail' cocktail}}>Delete</button>
+      {{/if}}
       {{/cocktail-item}}
 
     </div>
