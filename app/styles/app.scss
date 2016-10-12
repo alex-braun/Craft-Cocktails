@@ -3,40 +3,21 @@
 
 body {
   background:
-    url(../assets/images/cocktail_bar.jpg) 100%;
-    // url(../assets/images/cocktail_i_by_creatunco.jpg) no-repeat;
-
-
-
+    linear-gradient(to left, rgba(74, 141, 52, 0.6), rgba(74, 232, 52, 0.2)), url(../assets/images/Wallpaper_Cocktails_Drinks.jpg);
     background-size: 100%,
-
-    // 800px 900px no-repeat,
-    // linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  // background-repeat: no-repeat;
-
 }
 
 .navbar-default {
-  background: black;
+  background: #000;
 }
-// .main {
-//     margin: 0 30px 0 30px;
-// }
-
-// .text-center {
-//   margin: 0 auto;
-// }
 
 .title {
   height: 175px;
-
-
-
 }
 
 .title  h1 {
   font-size: 50px;
-  color: #F4FCDE;
+  color: #000;
 }
 
 h2 {
@@ -47,39 +28,61 @@ h2 {
   width: 150px;
 }
 
-.search-cocktail {
-  width: 350px;
+.search-bar {
+  background: #000;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.each-recipe {
-  // min-height: 500px;
-  height: 500px;
-
+.search-cocktail {
+  width: 275px;
+  margin-top: 10px;
   margin-bottom: 10px;
+}
 
+.form-group {
+  margin-bottom: 0;
+}
+.each-recipe {
+  height: 510px;
+  // background-color: rgba(245, 245, 245, .7);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .cocktail-item {
   height: 500px;
-
+  background-color: rgba(31, 33, 0, 0.8);
 }
 
-.panel-footer {
-  // background-color: #000;
-  padding: 20px 15px;
-  // position: absolute;
-  // bottom: 0;
-  // width: 87%;
+.pull-right {
+  margin-top: -10px;
 }
 
 .panel-heading {
   min-height: 55px;
+  background: #FFFFFF !important;
+}
+
+.panel-title {
+  color: #3D3D3D;
 }
 
 .panel-body {
   height: 402px;
   word-wrap: break-word;
   overflow: auto;
+}
+
+.panel-body p {
+  color: #ffffff;
+}
+
+.panel-footer {
+  padding: 20px 15px;
+  background-color: rgba(0, 0, 0, .5) !important;
 }
 
 .all-button {
@@ -96,4 +99,12 @@ h2 {
 
 .control-label {
   color: #F4FCDE;
+}
+
+.alert-info {
+  background: rgba(31, 33, 0, 0.8);
+}
+
+.alert-info p {
+  color: #ffffff;
 }
