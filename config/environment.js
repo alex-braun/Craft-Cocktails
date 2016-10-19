@@ -41,8 +41,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
-    //deployment step
+    // 
+    // deployment step
     ENV.baseURL = '/';
     ENV.locationType = 'hash';
     ENV.apiHost = 'https://peaceful-cove-48013.herokuapp.com/';
