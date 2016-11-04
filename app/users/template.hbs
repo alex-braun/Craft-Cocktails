@@ -1,7 +1,16 @@
-<h2>Users</h2>
+<h2 class="list-users">My Recipes</h2>
 
-<ul class="list-users">
-{{#each model as |user|}}
-  <li>{{user.email}}</li>
+{{#each model as |cocktail|}}
+
+{{#if cocktail.editable}}
+  {{#cocktail-item item=cocktail}}
+    {{#if isAdmin}}
+      {{#link-to 'cocktails.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
+      <button class="btn btn-danger btn-xs" {{action 'deleteCocktail' cocktail}}>Delete</button>
+      {{else if cocktail.editable}}
+      {{#link-to 'cocktails.edit' cocktail.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
+      <button class="btn btn-danger btn-xs" {{action 'deleteCocktail' cocktail}}>Delete</button>
+    {{/if}}
+  {{/cocktail-item}}
+{{/if}}
 {{/each}}
-</ul>
