@@ -5,6 +5,8 @@
     </div>
   </div>
 </div>
+
+{{#if isAuthenticated}}
 <div class="well">
   <ul class="nav nav-pills">
     {{#link-to 'cocktails.index' tagName="li"}}<a href="">All Cocktails</a>{{/link-to}}
@@ -12,5 +14,13 @@
   </ul>
 </div>
 
+{{else}}
+<div class='well-message'>
+  <div class='well-mess'>
+    <h3 class='sugg-sign-in'>{{#link-to "sign-in"}}Sign In{{/link-to}} to enter your own recipes!</h3>
+  </div>
+</div>
+
+{{/if}}
 
 {{outlet}}
