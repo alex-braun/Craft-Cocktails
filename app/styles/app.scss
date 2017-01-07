@@ -1,19 +1,70 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
+
 body {
-  background:
-    linear-gradient(to left, rgba(74, 141, 52, 0.3), rgba(74, 232, 52, 0.1)), url(../assets/images/Wallpaper_Cocktails_Drinks.jpg);
-    background-size: 100%;
-    background-position: 0 90px;
+  background-image: url(../assets/images/craft-cocktails-bkgrnd.png);
+}
+
+//NAVBAR SECTION//
+.navbar-nav > li.user {
+  padding: 15px 5px 15px 5px;
+  margin-right: 15px;
+  background-image: linear-gradient(to bottom, #dE150f 0%, #c2120d 100%);
+  color: black;
+}
+
+.nav-pills > li.active > a {
+  color: #000;
+  background-image: linear-gradient(to bottom, #dbdbdb 0%, #ffffff 100%);
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: black;
 }
 
 .navbar-default {
   background: #000;
 }
+///////
+
+a {
+  color: white;
+}
+
+a:hover,
+a:focus {
+  color: #de150f;
+}
+
+.text-center {
+  height: 310px;
+}
+
+.well-message {
+  height: 59px;
+}
+
+.well-mess {
+  height: 40px;
+  width: 394px;
+  background-color: #f2f2f2;
+}
+
+.sugg-sign-in > a,
+.sugg-sign-in {
+  color: #000;
+  padding: 5px 0 0 5px;
+}
+
+.main {
+    margin-top: 110px;
+}
 
 .title {
-  height: 150px;
+  height: 249px;
 }
 
 .title-wrapper {
@@ -31,36 +82,16 @@ body {
 }
 
 h2 {
-  color: #F4FCDE;
+  color: #3D3D3D;
 }
 
 .well {
   width: 235px;
   background: #000;
+  padding: 9px;
 }
 
-.navbar-nav > li.user {
-  padding: 15px 5px 15px 5px;
-  margin-right: 15px;
-  background-color: green;
-  color: white;
-}
 
-.nav-pills > li.active > a {
-  color: #000;
-  background-image: linear-gradient(to bottom, #dbdbdb 0%, #ffffff 100%);
-}
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  color: rgb(74, 141, 52);
-}
-
-a {
-  color: rgb(74, 141, 52);
-}
-a:hover, a:focus {
-  color: rgb(74, 141, 52);
-}
 
 .search-bar {
   background: #000;
@@ -68,6 +99,13 @@ a:hover, a:focus {
   margin-right: 0px;
   border-radius: 4px;
   margin-bottom: 10px;
+
+  h3 {
+    color: #ffffff;
+    float: left;
+    margin-left: 35px;
+  }
+
 }
 
 .search-cocktail {
@@ -78,17 +116,18 @@ a:hover, a:focus {
 
 .form-group {
   margin-bottom: 0;
+  min-width: 265px;
 }
+
 .each-recipe {
   height: 510px;
-  // background-color: rgba(245, 245, 245, .7);
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 .cocktail-item {
   height: 500px;
-  background-color: rgba(31, 33, 0, 0.8);
+  background-color: rgba(31, 33, 0, 0.0);
 }
 
 .pull-right {
@@ -108,10 +147,11 @@ a:hover, a:focus {
   height: 402px;
   word-wrap: break-word;
   overflow: auto;
+  background: #FFFFFF !important;
 }
 
 .panel-body p {
-  color: #ffffff;
+  color: #000;
 }
 
 .panel-footer {
@@ -132,7 +172,7 @@ a:hover, a:focus {
 }
 
 .control-label {
-  color: #F4FCDE;
+  color: black;
 }
 
 .alert-info {
@@ -141,4 +181,25 @@ a:hover, a:focus {
 
 .alert-info p {
   color: #ffffff;
+}
+
+footer {
+  clear: both;
+  bottom: 0px;
+  margin: 0 auto;
+  h5 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    height: 203px;
+  }
+}
+
+@media (max-width: 991px) {
+  .search-bar > h3 {
+    margin-left: 15px;
+  }
 }
