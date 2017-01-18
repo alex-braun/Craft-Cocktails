@@ -10,8 +10,10 @@ export default Ember.Route.extend({
       .then(() => this.transitionTo('application'))
       // .then(() => this.get('flashMessages').success('Thanks for signing in!'))
       .catch(() => {
+
         this.get('flashMessages')
         .danger('There was a problem. Please try again.');
+
       });
     },
   },
