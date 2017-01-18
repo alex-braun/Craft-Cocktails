@@ -19,7 +19,6 @@ export default Ember.Controller.extend({
 
     let results = this.get('model');
     const query = this.get('filter');
-    console.log(query);
 //ensures boolean type
     if (!!query) {
       const regexString = '(' + query.split(' ').join(')+.*(') + ')+.*';
